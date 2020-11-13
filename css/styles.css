@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg"); /* Here we can put 2 images in the body*/
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -300px -400px, 700px 380px; /*The first numbers are for the first image,
+                                                    the second numbers, for the second image*/
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.main__profileCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+
+  width: 500px;
+  height: 500px;
+
+  background-color: #fff;
+}
+
+.main__profileCard-background {
+  background: url("../images/bg-pattern-card.svg");
+  height: 32%;
+  border-radius: 16px 16px 0px 0px;
+}
